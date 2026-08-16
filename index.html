@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECHFEST // Techfest 2026</title>
+  <meta name="description" content="TECHFEST — a futuristic 3D interactive techfest experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-core"></div>
+    <div class="loader-text">INITIALIZING TECHFEST <span id="loadPct">0%</span></div>
+  </div>
+
+  <canvas id="webgl"></canvas>
+  <div class="grain"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home">TN<span>//</span>26</a>
+    <nav>
+      <a href="#experience">Experience</a>
+      <a href="#events">Events</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#register">Register</a>
+    </nav>
+    <button class="menu-btn" aria-label="Toggle menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ADITYA UNIVERSITY • 2026</p>
+        <h1>TECH<span>FEST</span></h1>
+        <p class="hero-sub">BUILD THE <b>IMPOSSIBLE.</b></p>
+        <p class="hero-desc">A next-generation techfest where code, creativity and competition collide.</p>
+        <div class="hero-actions">
+          <a href="#register" class="btn btn-primary">ENTER THE GRID <i>↗</i></a>
+          <a href="#events" class="btn btn-ghost">EXPLORE EVENTS</a>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <span>SCROLL TO ENTER</span>
+        <span class="scroll-line"></span>
+      </div>
+      <div class="hero-status"><span class="pulse"></span> SYSTEM ONLINE</div>
+    </section>
+
+    <section id="experience" class="section split-section">
+      <div class="section-label">01 / EXPERIENCE</div>
+      <div class="content">
+        <p class="eyebrow">NOT ANOTHER COLLEGE FEST</p>
+        <h2>ENTER A<br><em>NEW DIMENSION.</em></h2>
+        <p class="lead">Walk through a living digital universe. Solve problems, build prototypes, battle in arenas and meet the people shaping tomorrow.</p>
+        <div class="stats">
+          <div><strong>40+</strong><span>EVENTS</span></div>
+          <div><strong>2K+</strong><span>INNOVATORS</span></div>
+          <div><strong>₹5L</strong><span>PRIZES</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section events-section">
+      <div class="section-label">02 / EVENTS</div>
+      <div class="content wide">
+        <p class="eyebrow">CHOOSE YOUR ARENA</p>
+        <h2>MAKE YOUR<br><em>MOVE.</em></h2>
+        <div class="event-grid">
+          <article class="event-card" data-event="01">
+            <div class="card-icon">⌬</div><span>01</span><h3>CYBER<br>CLASH</h3><p>Capture the flag • Security • Reverse engineering</p><b>₹50K</b>
+          </article>
+          <article class="event-card" data-event="02">
+            <div class="card-icon">◈</div><span>02</span><h3>AI<br>FORGE</h3><p>Build intelligent solutions in a 24-hour sprint</p><b>₹75K</b>
+          </article>
+          <article class="event-card" data-event="03">
+            <div class="card-icon">△</div><span>03</span><h3>ROBO<br>RUMBLE</h3><p>Autonomous machines • Arena battles • Hardware</p><b>₹60K</b>
+          </article>
+          <article class="event-card" data-event="04">
+            <div class="card-icon">✦</div><span>04</span><h3>DESIGN<br>SHIFT</h3><p>UX challenge • Rapid prototyping • Visual systems</p><b>₹40K</b>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section schedule-section">
+      <div class="section-label">03 / SCHEDULE</div>
+      <div class="content">
+        <p class="eyebrow">48 HOURS / ZERO LIMITS</p>
+        <h2>THE<br><em>PROTOCOL.</em></h2>
+        <div class="timeline">
+          <div class="time-row"><time>09:00</time><div><b>OPENING GATEWAY</b><span>Registration + welcome briefing</span></div><small>DAY 01</small></div>
+          <div class="time-row"><time>11:30</time><div><b>EVENTS GO LIVE</b><span>Hackathons, robotics & design challenges</span></div><small>DAY 01</small></div>
+          <div class="time-row"><time>18:00</time><div><b>NEON NETWORK</b><span>Tech talks + founder meet-up</span></div><small>DAY 01</small></div>
+          <div class="time-row"><time>09:00</time><div><b>FINAL TRANSMISSION</b><span>Demo day + project showcases</span></div><small>DAY 02</small></div>
+          <div class="time-row"><time>18:30</time><div><b>THE AWAKENING</b><span>Finale + awards + afterparty</span></div><small>DAY 02</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="section register-section">
+      <div class="register-orb"></div>
+      <div class="content register-content">
+        <p class="eyebrow">SYSTEM ACCESS</p>
+        <h2>READY TO<br><em>BUILD?</em></h2>
+        <p class="lead">Your next breakthrough starts with one click.</p>
+        <a href="mailto:techfest@example.com?subject=TECHFEST%202026%20Registration" class="btn btn-primary">REGISTER NOW <i>↗</i></a>
+        <div class="date">18 — 19 OCTOBER 2026 <span>•</span> ADITYA UNIVERSITY</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>TECHFEST // 2026</span>
+    <span>BUILD THE IMPOSSIBLE.</span>
+    <span>© ALL SYSTEMS RESERVED</span>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
